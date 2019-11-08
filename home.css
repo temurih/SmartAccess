@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+    font-family: "Heebo", sans-serif;
+    color: #030611;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+}
+
+footer {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 80px;
+    font-weight: bold;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+}
+
+#bottom {
+    font-weight: bold;
+}
+
+body #hero-section {
+    height: calc(100vh - (39px + 3rem + 80px));
+}
+
+.hero-section .w-100 img {
+    margin-top: 2rem;
+}
+
+.hero-section .w-100 h1 {
+    margin-top: 0;
+}

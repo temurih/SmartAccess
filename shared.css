@@ -1,0 +1,102 @@
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+content {
+    text-align: center;
+}
+
+#dot-1,
+#dot-2,
+#dot-3,
+.cursor {
+    cursor: pointer;
+}
+
+#logo-container {
+    margin-top: 1rem;
+}
+
+#logo-container img {
+    height: 35px;
+}
+
+#hero-section {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    justify-content: center;
+    padding: 2rem 4rem 0 4rem;
+    height: calc(100vh - (39px + 3rem));
+    overflow-y: auto;
+}
+
+h1 {
+    font-weight: 100;
+    margin-bottom: 0;
+    margin-top: 1rem;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+#hero-section img {
+    height: 250px;
+}
+
+.pink {
+    color: #ff3266;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+#bottom {
+    margin: 2rem 0;
+}
+
+.carrot {
+    font-size: small;
+}
+
+#dots,
+#reader-button {
+    margin-bottom: 2rem;
+}
+
+#dot-1,
+#dot-2,
+#dot-3 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    margin: 0 0.5rem;
+    background-color: #51535f;
+}
+
+#dot-1 {
+    background-color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button {
+    width: 165px;
+    border: none;
+    background-color: #ff3266;
+    padding: 15px 33px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: #fff;
+}

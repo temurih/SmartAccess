@@ -1,0 +1,18 @@
+#slider-2,
+#slider-1 {
+    display: none;
+}
+
+body {
+    margin: 0;
+    background-color: #060a1b;
+    font-family: "Heebo", sans-serif;
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+}
+
+button {
+    margin-bottom: 1rem;
+}
