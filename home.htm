@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
         <link rel="icon" href="favicon.ico" />
+        <script src="main.js"></script>
         <link
             rel="stylesheet"
             type="text/css"
@@ -27,7 +28,7 @@
                 </p>
             </div>
             <div id="reader-button" class="w-100">
-                <button>Open Reader</button>
+                <button onclick="readyScanToggle()">Open Reader</button>
             </div>
             <div id="bottom" class="w-100">
                 Already a user?
@@ -37,5 +38,12 @@
         <footer class="pink w-100">
             <div>About Smart Access</div>
         </footer>
+        <div id="overlay"></div>
+        <div id="ready-scan" class="hide">
+            <h3>Ready to Scan</h3>
+            <img src="img/nfc-ready.png" alt="NFC Ready" title="NFC Ready" />
+            <p>Hold your device near the tag to scan it.</p>
+            <button onclick="readyScanToggle()">Cancel</button>
+        </div>
     </body>
 </html>
