@@ -16,3 +16,21 @@ body {
 button {
     margin-bottom: 1rem;
 }
+
+.t-ScrollBar {
+    margin: 1rem 0;
+}
+
+.t-ScrollBar__item {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 0.5rem;
+    border-radius: 100%;
+    background: #51535f;
+    transition: background ease 0.2s;
+    cursor: pointer;
+}
+.t-ScrollBar__item.is-active {
+    background: #fff;
+}

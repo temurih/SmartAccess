@@ -67,26 +67,6 @@ p {
     font-size: small;
 }
 
-#dots,
-#reader-button {
-    margin-bottom: 2rem;
-}
-
-#dot-1,
-#dot-2,
-#dot-3 {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    margin: 0 0.5rem;
-    background-color: #51535f;
-}
-
-#dot-1 {
-    background-color: #fff;
-}
-
 button:hover {
     opacity: 0.9;
 }

@@ -36,6 +36,10 @@ body #hero-section {
     margin-top: 0;
 }
 
+#reader-button {
+    margin-bottom: 2rem;
+}
+
 #ready-scan {
     position: absolute;
     left: 0;
