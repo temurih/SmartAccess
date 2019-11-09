@@ -19,41 +19,53 @@
             media="screen"
             href="shared.css"
         />
+        <script src="index.min.js"></script>
     </head>
     <body>
         <div id="logo-container">
             <img src="img/white.png" alt="Logo" title="Logo" />
         </div>
         <div id="hero-section">
-            <div class="w-100">
-                <div id="slider-1">
-                    <img src="img/educate.png" alt="Educate" title="Educate" />
-                    <h1>Educate</h1>
-                    <p>
-                        Assist at the point of activity with process knowledge
-                        and product information.
-                    </p>
+            <div class="w-100 swiper-container" id="swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img
+                            src="img/educate.png"
+                            alt="Educate"
+                            title="Educate"
+                        />
+                        <h1>Educate</h1>
+                        <p>
+                            Assist at the point of activity with process
+                            knowledge and product information.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/assess.png" alt="Assess" title="Assess" />
+                        <h1>Assess</h1>
+                        <p>
+                            Reference and training checklists provide real-time
+                            assessment and employee support.
+                        </p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="img/empower.png"
+                            alt="Empower"
+                            title="Empower"
+                        />
+                        <h1>Empower</h1>
+                        <p>
+                            Enable your workforce to excel at their
+                            responsibilities, and provide exceptional customer
+                            service.
+                        </p>
+                        <button onclick="redirectToHome()">
+                            Finish <span class="carrot">⍰</span>
+                        </button>
+                    </div>
                 </div>
-                <div id="slider-2">
-                    <img src="img/assess.png" alt="Assess" title="Assess" />
-                    <h1>Assess</h1>
-                    <p>
-                        Reference and training checklists provide real-time
-                        assessment and employee support.
-                    </p>
-                </div>
-                <div id="slider-3">
-                    <img src="img/empower.png" alt="Empower" title="Empower" />
-                    <h1>Empower</h1>
-                    <p>
-                        Enable your workforce to excel at their
-                        responsibilities, and provide exceptional customer
-                        service.
-                    </p>
-                    <button onclick="redirectToHome()">
-                        Finish <span class="carrot">⍰</span>
-                    </button>
-                </div>
+                <div class="t-ScrollBar"></div>
             </div>
             <div>
                 <div id="dots" class="w-100">
@@ -69,4 +81,16 @@
             </div>
         </div>
     </body>
+    <script>
+        var mySwiper = new Swiper("#swiper1", {
+            direction: "horizontal",
+            spaceBetween: 100,
+            pagination: {
+                el: ".t-ScrollBar",
+                clickable: true,
+                bulletClass: "dot-1",
+                bulletActiveClass: "is-active"
+            }
+        });
+    </script>
 </html>
