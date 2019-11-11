@@ -3,15 +3,15 @@ function redirectToHome() {
 }
 
 function readyScanToggle() {
-    const div = document.getElementById("ready-scan");
+    const div = document.getElementsByClassName("ready-scan")[0];
     const overlay = document.getElementById("overlay");
     if (div.classList.contains("show")) {
         div.classList.add("hide");
         div.classList.remove("show");
-        overlay.classList.remove("overlay");
+        overlay.style.display = "none";
     } else {
+        overlay.style.display = "block";
         div.classList.add("show");
         div.classList.remove("hide");
-        overlay.classList.add("overlay");
     }
 }

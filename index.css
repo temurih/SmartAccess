@@ -1,20 +1,22 @@
-#slider-2,
-#slider-1 {
-    display: none;
-}
-
 body {
+    height: 100vh;
     margin: 0;
     background-color: #060a1b;
     font-family: "Heebo", sans-serif;
     color: #fff;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
-button {
-    margin-bottom: 1rem;
+.skip {
+    margin: 2rem 0;
+}
+
+footer {
+    margin: 2rem 0;
 }
 
 .t-ScrollBar {

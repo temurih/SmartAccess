@@ -5,28 +5,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Smart Access</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="favicon.ico" />
-        <script src="main.js"></script>
-        <link
-            rel="stylesheet"
-            type="text/css"
-            media="screen"
-            href="index.css"
-        />
         <link
             rel="stylesheet"
             type="text/css"
             media="screen"
             href="shared.css"
         />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="index.css"
+        />
+        <script src="main.js"></script>
         <script src="index.min.js"></script>
     </head>
     <body>
-        <div id="logo-container">
+        <div class="logo-container">
             <img src="img/white.png" alt="Logo" title="Logo" />
         </div>
-        <div id="hero-section">
-            <div class="w-100 swiper-container" id="swiper1">
+        <div class="hero-section">
+            <div class="swiper-container">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <img
@@ -66,18 +65,18 @@
                     </div>
                 </div>
                 <div class="t-ScrollBar"></div>
-            </div>
-            <div>
-                <a class="pink w-100" href="home.htm">Skip Tour</a>
-            </div>
-            <div id="bottom" class="w-100">
-                Already a user?
-                <span class="pink"> Login <span class="carrot">⍰</span> </span>
+                <div class="skip">
+                    <a class="pink" href="home.htm">Skip Tour</a>
+                </div>
             </div>
         </div>
+        <footer>
+            Already a user?
+            <span class="pink"> Login <span class="carrot">⍰</span> </span>
+        </footer>
     </body>
     <script>
-        var mySwiper = new Swiper("#swiper1", {
+        var swiper = new Swiper(".swiper-container", {
             direction: "horizontal",
             spaceBetween: 100,
             pagination: {

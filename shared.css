@@ -6,62 +6,18 @@ a:hover {
     opacity: 0.8;
 }
 
-content {
-    text-align: center;
+.logo-container img {
+    width: 200px;
+    margin: 1rem 0;
 }
 
-.cursor {
-    cursor: pointer;
-}
-
-#logo-container {
-    margin-top: 1rem;
-}
-
-#logo-container img {
-    height: 35px;
-}
-
-#hero-section {
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    justify-content: center;
-    padding: 2rem 4rem 0 4rem;
-    height: calc(100vh - (39px + 3rem));
+.hero-section {
+    padding: 0 3rem;
+    flex: 1;
+    align-items: center;
     overflow-y: auto;
-}
-
-h1 {
-    font-weight: 100;
-    margin-bottom: 0;
-    margin-top: 1rem;
-    font-size: x-large;
-    font-weight: bold;
-}
-
-p {
-    line-height: 1.5rem;
-}
-
-#hero-section img {
-    height: 250px;
-}
-
-.pink {
-    color: #ff3266;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-#bottom {
-    margin: 2rem 0;
-}
-
-.carrot {
-    font-size: small;
+    /* to make it centered */
+    /* display: flex; */
 }
 
 button:hover {
@@ -76,4 +32,13 @@ button {
     border-radius: 7px;
     cursor: pointer;
     color: #fff;
+    margin: 1rem 0;
+}
+
+.pink {
+    color: #ff3266;
+}
+
+.carrot {
+    font-size: small;
 }

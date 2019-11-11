@@ -3,43 +3,40 @@
     <head>
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>Home - Smart Access</title>
+        <title>Smart Access</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
-        <link rel="icon" href="favicon.ico" />
-        <script src="main.js"></script>
         <link
             rel="stylesheet"
             type="text/css"
             media="screen"
             href="shared.css"
         />
+        <link rel="stylesheet" type="text/css" media="screen" href="home.css" />
+        <script src="main.js"></script>
     </head>
     <body>
-        <div id="logo-container">
+        <div class="logo-container">
             <img src="img/color.png" alt="Logo" title="Logo" />
         </div>
-        <div id="hero-section">
-            <div class="w-100">
-                <img src="img/no_nfc.png" alt="Educate" title="Educate" />
+        <div class="hero-section">
+            <div>
+                <div>
+                    <img src="img/no_nfc.png" alt="Educate" title="Educate" />
+                </div>
                 <h1>Enable NFC Reader</h1>
-                <p>
-                    Open the NFC reader on your iPhone to read the tag.
-                </p>
-            </div>
-            <div id="reader-button" class="w-100">
+                <p>Open the NFC reader on your iPhone to read the tag.</p>
                 <button onclick="readyScanToggle()">Open Reader</button>
             </div>
-            <div id="bottom" class="w-100">
-                Already a user?
-                <span class="pink"> Login <span class="carrot">⍰</span> </span>
-            </div>
         </div>
-        <footer class="pink w-100">
-            <div>About Smart Access</div>
-        </footer>
+        <div class="login">
+            Already a user?
+            <span class="pink"> Login <span class="carrot">⍰</span> </span>
+        </div>
         <div id="overlay"></div>
-        <div id="ready-scan" class="hide">
+        <footer>
+            <div class="pink">About Smart Access</div>
+        </footer>
+        <div class="ready-scan hide">
             <h3>Ready to Scan</h3>
             <img src="img/nfc-ready.png" alt="NFC Ready" title="NFC Ready" />
             <p>Hold your device near the tag to scan it.</p>
